@@ -13,4 +13,53 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
     <script src="script.js"></script>
 </body>
-</html>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RialWatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <style>
+        body {
+            background-color: #1a202c; /* Dark background */
+            color: #cbd5e0; /* Light text */
+            font-family: sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .box {
+            background-color: #2d3748; /* Darker box background */
+            border-radius: 0.5rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            text-align: center;
+        }
+        .asset-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .asset-label {
+            font-size: 1rem;
+            color: #a0aec0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div id="gold-value">
+                <div class="asset-value">Loading...</div>
+                <div class="asset-label">Gold (USD/oz)</div>
+            </div>
+            <div id="silver-value">
+                <div class="asset-value">Loading...</div>
+                <div class="asset-label">Silver (USD/oz)</div>
+            </div>
+            <div id="usd-value">
+                <div class="
